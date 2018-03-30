@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server",
-    "watch": "gulp watch",
-    "lint": "gulp lint",
-    "bundle": "gulp bundle",
-    "test": "mocha test/client --recursive --compilers js:babel-core/register",
-    "coverage": "nyc -e .jsx --reporter=html yarn test"
+    "start": "node_modules/.bin/nodemon server",
+    "watch": "node_modules/.bin/gulp watch",
+    "lint": "node_modules/.bin/gulp lint",
+    "bundle": "node_modules/.bin/gulp bundle",
+    "test": "node_modules/.bin/mocha test/client --recursive --compilers js:babel-core/register",
+    "coverage": "node_modules/.bin/nyc -e .jsx --reporter=html yarn test"
   },
   "author": "Craig Harvie <craig@craigharvie.me> (http://craigharvie.me)",
   "license": "MIT",
