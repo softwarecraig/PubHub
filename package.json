@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node_modules/.bin/nodemon server",
-    "watch": "node_modules/.bin/gulp watch",
-    "lint": "node_modules/.bin/gulp lint",
-    "bundle": "node_modules/.bin/gulp bundle",
-    "test": "node_modules/.bin/mocha test/client --recursive --compilers js:babel-core/register"
+    "start": "nodemon server",
+    "watch": "gulp watch",
+    "lint": "gulp lint",
+    "bundle": "gulp bundle",
+    "test": "mocha test/client --recursive --compilers js:babel-core/register",
+    "coverage": "nyc -e .jsx --reporter=html yarn test"
   },
   "author": "Craig Harvie <craig@craigharvie.me> (http://craigharvie.me)",
   "license": "MIT",
@@ -24,6 +25,8 @@
     "mocha": "^4.0.1",
     "node-sass": "^3.3.3",
     "nodemon": "^1.11.0",
+    "nyc": "^11.6.0",
+    "react-dom": "15.5.0",
     "react-test-renderer": "^16.3.0",
     "redux-test-utils": "^0.1.3",
     "redux-thunk": "^2.2.0",
