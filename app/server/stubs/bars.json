@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Tennents Bar",
+    "lat": 55.874207,
+    "long": -4.295157,
+    "image_url": "https://glasgowguardian.co.uk/wp-content/uploads/sites/2/2011/01/TennentsBar11.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hillhead Bookclub",
+    "lat": 55.877028,
+    "long": -4.290725,
+    "image_url": "http://itson.co/bookclub/wp-content/uploads/sites/16/2016/03/bookclub-queue.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Vodka Wodka",
+    "lat": 55.877094,
+    "long": -4.290703,
+    "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/10/5a/ff/63/photo0jpg.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Wee Pub",
+    "lat": 55.845094,
+    "long": -4.298703,
+    "image_url": "http://farm8.staticflickr.com/7078/7282781980_7ff6fbe121.jpg"
+  },
+  {
+    "id": 5,
+    "name": "The Grosvenor",
+    "lat": 55.455094,
+    "long": -4.098703,
+    "image_url": "http://i1.glasgowlive.co.uk/incoming/article11227150.ece/ALTERNATES/s615/Screen-Shot-2016-04-22-at-140838.png"
+  }
+]

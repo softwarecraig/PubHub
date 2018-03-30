@@ -1,0 +1,129 @@
+body {
+  background: $grey-light;
+  color: $grey-dark;
+  font-family: $fontFamily;
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.not-found {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 320px;
+  padding: 1em;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 1em;
+
+  &.small {
+    max-width: 900px;
+  }
+}
+
+.padded {
+  padding: 1em;
+}
+
+
+.search {
+  padding: 1em 1em 0 1em;
+
+  @media(min-width: $mq-medium) {
+    padding: 2em 2em 0 2em;
+  }
+
+  input[type=text] {
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+}
+
+
+header {
+  background: $blue;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+
+  a {
+    display: inline-block;
+  }
+
+  img {
+    margin-top: 13px;
+    height: 24px;
+  }
+
+  /* Offset icon-btn */
+  .logo {
+    margin-right: -50px
+  }
+
+  .icon-btn {
+    line-height: 50px;
+    float: right;
+    width: 50px;
+    position: relative;
+
+    &:hover {
+      background: lighten($blue, 10%);
+      color: darken($blue, 10%);
+    }
+  }
+}
+
+.icon-btn {
+  color: $white;
+}
+
+.icon-btn--count {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  right: 4px;
+  line-height: 1;
+  line-height: 20px;
+  font-size: 0.75em;
+  background: darken($blue, 10%);
+  color: $white;
+  @include border-radius(50%);
+}
